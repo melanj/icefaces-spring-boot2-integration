@@ -1,20 +1,25 @@
 package com.amdexa.example;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.context.ServletContextAware;
-//import com.icesoft.faces.webapp.CompatResourceServlet;
 
 import javax.faces.webapp.FacesServlet;
 import javax.servlet.ServletContext;
 
 @SpringBootApplication
-public class App implements ServletContextAware {
+@EnableAutoConfiguration
+@ComponentScan({"org.icefaces.samples.showcase"})
+public class App extends SpringBootServletInitializer implements ServletContextAware {
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
+
 
     @Override
     public void setServletContext(ServletContext servletContext) {
@@ -24,6 +29,7 @@ public class App implements ServletContextAware {
         servletContext.setInitParameter("com.icesoft.faces.uploadDirectory", "upload");
         servletContext.setInitParameter("com.sun.faces.forceLoadConfiguration", Boolean.TRUE.toString());
         servletContext.setInitParameter("javax.faces.FACELETS_SKIP_COMMENTS", "true");
+        servletContext.setInitParameter("com.sun.faces.injectionProvider", "com.sun.faces.vendor.WebContainerInjectionProvider");
     }
 
 
@@ -35,12 +41,4 @@ public class App implements ServletContextAware {
         return servletRegistrationBean;
     }
 
-
-    /*@Bean
-    public ServletRegistrationBean<CompatResourceServlet> resourceServletRegistrationBean() {
-        ServletRegistrationBean<CompatResourceServlet> servletRegistrationBean = new ServletRegistrationBean<>(
-                new CompatResourceServlet(), "/xmlhttp/*");
-        servletRegistrationBean.setLoadOnStartup(1);
-        return servletRegistrationBean;
-    }*/
 }
