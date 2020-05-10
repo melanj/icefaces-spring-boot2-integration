@@ -18,7 +18,7 @@ package org.icefaces.samples.showcase.example.ace.tooltip;
 
 import java.io.Serializable;
 
-import javax.faces.bean.RequestScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import javax.faces.bean.ManagedProperty;
 

@@ -21,9 +21,8 @@ import java.io.Serializable;
 import javax.annotation.PostConstruct;
 import javax.inject.Named;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.RequestScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.inject.Named;
 
 import org.icefaces.samples.showcase.util.FacesUtils;
 import org.icefaces.samples.showcase.view.menu.legacy.LegacyUrlMapper;

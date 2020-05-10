@@ -19,7 +19,7 @@ package org.icefaces.samples.showcase.example.ace.fileentry.utils;
 import java.util.ResourceBundle;
 
 import javax.inject.Named;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 
 @Named("messageUtils")
 @SessionScoped

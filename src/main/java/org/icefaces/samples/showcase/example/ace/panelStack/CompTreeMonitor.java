@@ -17,7 +17,7 @@
 package org.icefaces.samples.showcase.example.ace.panelStack;
 
 import javax.inject.Named;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIViewRoot;
 import javax.faces.context.FacesContext;

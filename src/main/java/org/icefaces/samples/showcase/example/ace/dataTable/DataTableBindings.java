@@ -21,7 +21,7 @@ import org.icefaces.ace.component.datatable.DataTable;
 import javax.annotation.PostConstruct;
 import javax.inject.Named;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.RequestScoped;
+import javax.enterprise.context.RequestScoped;
 import java.util.HashMap;
 import java.util.Map;
 

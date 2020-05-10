@@ -17,7 +17,7 @@
 package org.icefaces.samples.showcase.example.ace.theme;
 
 import javax.inject.Named;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 
 /**
