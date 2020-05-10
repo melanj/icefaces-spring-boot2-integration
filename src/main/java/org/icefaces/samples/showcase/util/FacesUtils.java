@@ -16,6 +16,8 @@
 
 package org.icefaces.samples.showcase.util;
 
+import org.springframework.core.io.ClassPathResource;
+
 import javax.el.ELContext;
 import javax.el.ExpressionFactory;
 import javax.el.ValueExpression;
@@ -391,7 +393,7 @@ public class FacesUtils implements Serializable{
             return msgProperties.getProperty(key, "unknown");
         InputStream is = null;
         try {
-            is = getServletContext().getResourceAsStream("/messages.properties");
+            is =  new ClassPathResource("org/icefaces/samples/showcase/view/resources/messages.properties").getInputStream();
             msgProperties = new Properties();
             msgProperties.load(is);
         } catch (Throwable e) {

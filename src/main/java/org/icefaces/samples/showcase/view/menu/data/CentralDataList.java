@@ -19,6 +19,7 @@ package org.icefaces.samples.showcase.view.menu.data;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.icefaces.samples.showcase.util.FacesUtils;
 import org.icefaces.samples.showcase.view.menu.CategoryGroup;
 import org.icefaces.samples.showcase.view.menu.ComponentGroup;
 import org.icefaces.samples.showcase.view.menu.Demo;
@@ -959,7 +960,7 @@ public class CentralDataList {
 	}
 	
 	private static String msgs(String key) {
-		return "test";
-		//return FacesUtils.getJSFMessageResourceString("msgs", key);
+		//return "test";
+		return FacesUtils.getJSFMessageResourceString("msgs", key);
 	}
 }

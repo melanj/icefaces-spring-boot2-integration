@@ -32,7 +32,7 @@ import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 import javax.annotation.PostConstruct;
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;

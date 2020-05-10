@@ -2,7 +2,7 @@ package org.icefaces.samples.showcase.util;
 
 import java.io.Serializable;
 
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import javax.inject.Named;
 

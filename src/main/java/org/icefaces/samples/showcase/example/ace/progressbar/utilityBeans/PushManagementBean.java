@@ -18,7 +18,7 @@ package org.icefaces.samples.showcase.example.ace.progressbar.utilityBeans;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
 

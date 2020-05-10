@@ -17,7 +17,7 @@
 package org.icefaces.samples.showcase.util;
 
 import javax.inject.Named;
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.faces.model.SelectItem;
 import javax.inject.Named;
 
